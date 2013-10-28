@@ -25,3 +25,7 @@ task202: Makefile task202.c
 eof: Makefile eof.c
 	gcc ${CFLAGS} eof.c -o eof
 	./eof
+
+task203: Makefile task203.c
+	gcc ${CFLAGS} task203.c -o task203
+	./task203
