@@ -34,6 +34,6 @@ int main(void)
 
 char tolowercase(char c) 
 {
-    return (c<='Z' && c>='A') ? c+'a'-'A' : c;
+    return (c>='A' && c<='Z') ? c+'a'-'A' : ((c>='a' && c<='z') ? c : printf("error"));
 }
 
