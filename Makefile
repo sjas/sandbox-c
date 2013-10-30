@@ -1,6 +1,6 @@
 # Makefile
 
-CFLAGS=-Wall
+CFLAGS=-Wall -Wextra
 
 ex01: Makefile ex01.c
 	gcc ${CFLAGS} ex01.c -o ex01
@@ -29,3 +29,12 @@ eof: Makefile eof.c
 task203: Makefile task203.c
 	gcc ${CFLAGS} task203.c -o task203
 	./task203
+
+optest: Makefile operator-test.c
+	gcc ${CFLAGS} operator-test.c -o operator-test
+	./operator-test
+
+task204: Makefile task204.c
+	gcc ${CFLAGS} task204.c -o task204
+	./task204
+	#cat task204-test.txt | ./task204
