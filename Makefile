@@ -41,3 +41,7 @@ task204: Makefile task204.c
 task205: Makefile task205.c
 	gcc ${CFLAGS} task205.c -o task205
 	cat task205-test.txt | ./task205
+
+ampersand: Makefile ampersand.c
+	gcc ${CFLAGS} ampersand.c -o ampersand
+	cat ampersand-test.txt | ./ampersand
