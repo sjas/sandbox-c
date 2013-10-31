@@ -37,3 +37,7 @@ optest: Makefile operator-test.c
 task204: Makefile task204.c
 	gcc ${CFLAGS} task204.c -o task204
 	cat task204-test.txt | ./task204
+
+task205: Makefile task205.c
+	gcc ${CFLAGS} task205.c -o task205
+	cat task205-test.txt | ./task205
