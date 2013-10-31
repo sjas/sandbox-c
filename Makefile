@@ -1,6 +1,6 @@
 # Makefile
 
-CFLAGS=-Wall -Wextra
+CFLAGS=-Wall -Wextra -std=c99
 
 ex01: Makefile ex01.c
 	gcc ${CFLAGS} ex01.c -o ex01
@@ -34,14 +34,18 @@ optest: Makefile operator-test.c
 	gcc ${CFLAGS} operator-test.c -o operator-test
 	./operator-test
 
-task204: Makefile task204.c
+task204: Makefile task204.c task204-test.txt
 	gcc ${CFLAGS} task204.c -o task204
 	cat task204-test.txt | ./task204
 
-task205: Makefile task205.c
+task205: Makefile task205.c task205-test.txt
 	gcc ${CFLAGS} task205.c -o task205
 	cat task205-test.txt | ./task205
 
-ampersand: Makefile ampersand.c
-	gcc ${CFLAGS} ampersand.c -o ampersand
-	cat ampersand-test.txt | ./ampersand
+mem01-pointers: Makefile mem01-pointers.c
+	gcc ${CFLAGS} mem01-pointers.c -o mem01-pointers
+	./mem01-pointers
+
+mem02-arrays: Makefile mem02-arrays.c
+	gcc ${CFLAGS} mem02-arrays.c -o mem02-arrays
+	./mem02-arrays
