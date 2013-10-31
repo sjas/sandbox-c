@@ -4,7 +4,10 @@
 
 int main(void)
 {
-    printf("sadly task203 is unsolved until now...\n");
-    return 0;
+    char *password = "still no solution...";
+
+    printf("%s",password);
+
+    return (0);
 }
 
