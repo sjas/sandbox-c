@@ -4,10 +4,30 @@
 
 int main(void)
 {
-    char *password = "still no solution...";
+    char *password = "asdf";
+    char guess;
+    long count = 0;
 
-    printf("%s",password);
-
+    while ((guess = getchar()) != EOF)
+    {
+        if (*(password+count) != '\0')
+        {
+            if (guess != '\n')
+            {
+                if ((*(password+count) != guess))
+                {
+                    printf("PW MISMATCH");
+                    return(0);
+                }
+            count++;
+            }
+        }
+        else
+        {
+            printf("pw match");
+            return(0);
+        }
+    }
     return (0);
 }
 
