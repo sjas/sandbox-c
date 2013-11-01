@@ -49,3 +49,7 @@ mem01-pointers: Makefile mem01-pointers.c
 mem02-arrays: Makefile mem02-arrays.c
 	gcc ${CFLAGS} mem02-arrays.c -o mem02-arrays
 	./mem02-arrays
+
+task301: Makefile task301.c
+	gcc ${CFLAGS} task301.c -o task301
+	./task301
